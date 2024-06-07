@@ -109,6 +109,43 @@ Number('2')+2
 Number('a')+2
 
 
+// Strings in Javascript
+// Concatenation
 
+const firstname ='Sarah';
+const lastname='Darko';
+const middlename='Nshira';
+
+firstname +' ' +middlename+ ' '
+  +lastname;
+
+//Template Literal
+`${firstname} ${middlename} ${lastname}`
+
+let fullName="Sarah Darko"
+fullName.length
+
+for(let i=0; i<=fullName.length; i++){
+  console.log(i)
+
+}
+
+fullName.length
+fullName.toUpperCase()
+fullName.toLowerCase()
+fullName.charAt(8)
+fullName.slice(7,16)
+fullName.split("")
+fullName.replace("Darko", "bills")
+fullName.indexOf('bil')
+
+
+//string conversion
+Number('3.243')
+parseInt('3.243')
+parseFloat('3.243')
+let amount =18000
+console.log(`GhS${amount}`)
+amount.toString()
 
 
