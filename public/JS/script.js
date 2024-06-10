@@ -149,3 +149,49 @@ console.log(`GhS${amount}`)
 amount.toString()
 
 
+
+
+// //write a function that will add a participant to our google claasroom
+
+const participants =[];
+function addParticipant(email){ 
+  //check if email was provided
+  // if(email==undefined || email ==null) this is longhand of the if(!email)
+  if (!email){
+    return'No email provided';
+  }
+  //check if email is valid
+  if(!email.includes('@')){
+    return 'Invalid email provided';
+  }
+  //Add email to participants
+  participants.push(email);
+return'Participant added';
+  }
+addParticipant('mickeymond@yahoo.com');
+addParticipant('mickeymond@outlook.com')
+
+addParticipant();
+participants;
+
+//Arrays in JavaScript
+const users=[
+  {
+    username:'mickeymond',
+    password:'1234',
+    email:'mickeymond@yahoo.com'
+  },
+    {
+    username:'mickeymond201',
+    password:'12345',
+    email:'mickeymond@outlook.com'
+  },
+];
+
+
+
+
+
+
+
+
