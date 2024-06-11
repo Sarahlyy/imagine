@@ -195,3 +195,70 @@ const users=[
 
 
 
+
+
+
+
+// Write a function that will take a user with firstname,lastname and return fullname
+
+//  function fullName(){
+//    return 'Sarah Darko';
+//  }
+// fullName();
+
+// step 2 the question is looking for a user hence the parameter is user amd the user has properties of firstname and lastname
+// fullname();
+// step 3 now we define the user
+// answer 1
+function fullName(user){
+  // return user.firstname + ' '+user.lastname;//j`${user.firstname} ${user.lastname}`
+ return {
+   ...user,
+   fullName:`${user.firstname} ${user.lastname}`
+ };
+}
+const user={
+ firstname:'Michael',
+ lastname:'Hammond'
+}
+fullName(user);
+
+//Array map
+const users=[
+ {firstname:'Michael',lastname:'Hammond'},
+ {firstname:'Elon',lastname:'Musk'},
+ {firstname:'Barry',lastname:'Allen'},
+ {firstname:'Oliver',lastname:'Queen'},
+ {firstname:'Will',lastname:'Smith'}
+]
+
+
+users.map(fullName);
+
+// function square(number){
+//   return number*number;
+
+// }
+//  square(3)
+
+// Square of numbers
+function square(number){
+ return number**2;
+}
+square(4);
+const numbers=[9,8,7,6];
+numbers.map(square);
+
+//Array filter
+function isEven(number){
+ return number % 2===0;
+}
+isEven(9);
+
+numbers.filter(isEven);
+
+
+
+
+
+
