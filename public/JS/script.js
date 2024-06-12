@@ -175,18 +175,18 @@ addParticipant();
 participants;
 
 //Arrays in JavaScript
-const users=[
-  {
-    username:'mickeymond',
-    password:'1234',
-    email:'mickeymond@yahoo.com'
-  },
-    {
-    username:'mickeymond201',
-    password:'12345',
-    email:'mickeymond@outlook.com'
-  },
-];
+// const users=[
+//   {
+//     username:'mickeymond',
+//     password:'1234',
+//     email:'mickeymond@yahoo.com'
+//   },
+//     {
+//     username:'mickeymond201',
+//     password:'12345',
+//     email:'mickeymond@outlook.com'
+//   },
+// ];
 
 
 
@@ -259,6 +259,37 @@ numbers.filter(isEven);
 
 
 
+
+//write a function that will allow a user to reset their password
+
+// const user ={
+//   email:"mickeymond@yahoo.com",
+//   password:'1234'
+// }
+
+  
+function resetPassword(email,newPassword){
+  //check if email and new password was provided
+  if(!email|| !newPassword){
+    return "Email or password not provided";
+  }
+  
+  // check if provided email is correct
+  if (email === user.email){
+//Update Password with new one
+  user.password = newPassword;
+ return "Password reset successful";
+}
+  
+if(email !==user.email) {
+  return "Invalid email";
+ }
+}  
+ user;
+ resetPassword("mickeymond@yahoo.com"); 
+user;
+  
+  
 
 
 
