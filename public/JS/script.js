@@ -335,3 +335,84 @@ const students =[
   laptop1.brand;
   laptop2.brand;
   
+//arrays with Rachel
+const fruits = [
+
+  {
+      id: 1,
+      name: "banana",
+      color: 'yellow',
+      price: '10',
+      weight: '1kg',
+    isPublished:true
+    
+  },
+
+
+  {
+      id: 2,
+      name: "apple",
+      color: 'green',
+      price: '9',
+      weight: ' 2kg',
+     ispublished:true
+  },
+
+
+  {
+      id: 3,
+      name: "pineapple",
+      color: 'purple',
+      price: '8',
+      weight: '3kg',
+    isPublished:false,
+  },
+
+  {
+      id: 3,
+      name: 'guava',
+      color: 'grey',
+      price: '8',
+      weight: '3kg',
+    isPublished:true
+  },
+
+  {
+      id: 4,
+      name: 'strawberry',
+      color: 'pink',
+      price: '6',
+      weight: '7kg',
+    isPublished:true
+  },
+
+  {
+      id: 5,
+      name: 'grape',
+      color: 'blue',
+      price: '16',
+      weight: '17kg',
+    isPublished:false
+  },
+
+]
+fruits.map(fruit =>{
+return(fruit.name)
+})
+
+
+fruits.map(fruit =>{
+return(fruit.color)
+})
+
+
+
+fruits.filter(fruit=>{
+return(fruit.isPublished ==false)
+})
+
+
+
+
+
+
